@@ -22,7 +22,7 @@ def subtract(nums):
     return (result)
 #print(subtract([10,5,3]))
 
-def multiply(num1, num2):
+def multiply(nums):
     """Multiply the two inputs together."""
     return (num1*num2)
 
