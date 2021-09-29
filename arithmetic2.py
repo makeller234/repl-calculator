@@ -1,16 +1,26 @@
 """Functions for common math operations."""
 nums=[]
 
-def add(num1, num2):
+def add(nums):
     """Return the sum of the two inputs."""
-
+    sum =0
+    for i in nums:
+        sum += i
         
-    return (num1+num2)
+    return (sum)
+#testing add function
+#print(add([1,2,3]))
 
-
-def subtract(num1, num2):
+def subtract(nums):
     """Return the second number subtracted from the first."""
-    return (num1-num2)
+    result=nums[0]
+    i = 1
+    while i <= (len(nums)-1):
+        result= result - nums[i]
+        i+=1
+        
+    return (result)
+#print(subtract([10,5,3]))
 
 def multiply(num1, num2):
     """Multiply the two inputs together."""
