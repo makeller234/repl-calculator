@@ -14,9 +14,10 @@ while True:
     user_input= input("Enter math function and two numbers")
     token = user_input.split(' ')
     func_name = token[0]
-    if len(user_input)>=2:
+    
+    if len(token)>=2:
         param_a= float(token[1])
-    if len(user_input)>=3:
+    if len(token)>=3:
         param_b= float(token[2])
 
         
@@ -37,9 +38,9 @@ while True:
     elif func_name == "cube":
         print(cube(param_a))
     elif func_name == "power":
-        print(add(param_a, param_b))
+        print(power(param_a, param_b))
     elif func_name == "mod":
-        print(add(param_a, param_b))
+        print(mod(param_a, param_b))
 
 # pseudo-code
 # repeat forever:
